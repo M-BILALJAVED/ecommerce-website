@@ -69,7 +69,8 @@ body {
     transition: color 3s;
 }
 
-.nav-links ul li:hover,.icons i:hover {
+.nav-links ul li:hover,
+.icons i:hover {
     color: var(--hover-color);
 }
 
@@ -149,6 +150,7 @@ body {
     left: -65px;
     top: 50%;
 }
+
 .banner-content>span a::before {
     content: "";
     width: 40px;
@@ -168,4 +170,143 @@ body {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 16px;
+}
+
+/* section 2 */
+.section-2 {
+    margin-top: 50px;
+}
+
+.all-boxs {
+    gap: 10px;
+}
+
+.left-box,
+.right-box,
+.center-box {
+    width: 385px;
+    height: 477px;
+    /* padding: 39px 38px 20px 41px; */
+}
+
+.left-box {
+    background-image: url(assets/asset\ 6.jpeg);
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 39px 38px 20px 41px;
+}
+
+.left-box h2,
+.center-box h2,
+.right-box h2 {
+    margin: 0 0 3px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2.6px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.left-box span a,
+.right-box span a {
+    color: #878787;
+    font-size: 16px;
+    margin: 40px 0 0;
+    line-height: 16px;
+    text-decoration: none;
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+.left-btn {
+    margin: 40px 0 0;
+    cursor: pointer;
+}
+
+.left-btn span a:hover {
+    color: var(--hover-color);
+}
+
+.left-btn i:hover {
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.left-btn i {
+    color: #878787;
+    text-align: center;
+    border-radius: 100%;
+    border: 1px solid #878787;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 21px;
+    margin-left: 5px;
+}
+
+.discout-circle {
+    background-color: #eed24c;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+    top: 90px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 40px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.center-box {
+    flex-direction: column;
+}
+
+.up-box p,
+.right-box p {
+    margin: 40px 0 0;
+}
+
+.up-box {
+    background-image: url(assets/asset\ 7.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 39px 38px 20px 41px;
+    height: 48%;
+}
+
+.down-box {
+    background-image: url(assets/asset\ 8.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 39px 38px 20px 41px;
+    text-align: end;
+    height: 48%;
+    position: relative;
+}
+
+.down-box h2 {
+    letter-spacing: 1px;
+}
+
+.down-box a {
+    margin: 40px 0 0;
+    text-decoration: none;
+    position: absolute;
+    right: 38px;
+    bottom: 24px;
+}
+
+.down-box a:hover {
+    color: var(--hover-color);
+}
+
+.right-box {
+    background-image: url(assets/asset\ 9.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 39px 38px 20px 41px;
+
 }
