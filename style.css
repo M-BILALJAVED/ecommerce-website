@@ -530,3 +530,47 @@ body {
 .seller-box4 img{
     cursor: pointer;
 }
+
+
+ /* section 5 */
+ .section-5{
+    margin-top: 40px;
+}
+
+
+.inside-small-prod1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+.inside-small-text{
+    padding: 13px 0 0;
+}
+.small-prod-content{
+    gap: 30px;
+}
+.inside-small-text-for-hover:hover{
+    color: var(--hover-color);
+    cursor: pointer;
+}
+.small-prod-content:hover img{
+    cursor: pointer;
+}
+.small-prod-content{
+    color: #959596;
+    font: 14px / 16px "Montserrat", sans-serif;
+    margin-bottom: 3px;
+}
+ .inside-small-price {
+     gap: 12px;
+    }
+.inside-small-price p {
+    color: #252528 !important;
+    font: 18px / 18px "Montserrat", sans-serif;
+}
+
+.inside-small-price span {
+    color: #959596;
+    font: 14px / 16px "Montserrat", sans-serif;
+}
