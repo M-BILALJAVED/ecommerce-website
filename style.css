@@ -41,12 +41,16 @@ body {
     justify-content: space-between;
 }
 
+.justify-content-around {
+    justify-content: space-around;
+}
+
 .align-items-center {
     align-items: center;
 }
 
 /* header*/
-.header{
+.header {
     position: sticky;
     top: 0;
     z-index: 5;
@@ -54,6 +58,7 @@ body {
     transition: all 0.4s linear;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
 }
+
 .comapny-logo {
     cursor: pointer;
 }
@@ -320,4 +325,81 @@ body {
     background-size: cover;
     padding: 39px 38px 20px 41px;
 
+}
+
+/* section 3 */
+.section-3 {
+    margin-top: 40px;
+    padding: 0 15px;
+}
+
+.tab-links {
+    color: #838182;
+    gap: 40px;
+    padding: 0;
+    margin: 0 0 5px;
+    overflow: hidden;
+    list-style: none;
+    text-transform: uppercase;
+    font: 700 18px / 20px "Montserrat", sans-serif;
+}
+
+.tab-links li {
+    border-right: 1px solid #d8d8d8;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.box-content {
+    text-align: center;
+}
+
+.box-content h3 {
+    margin: 0 0 5px;
+    color: #757575;
+    text-transform: capitalize;
+    font: 600 14px / 20px "Source Sans Pro", sans-serif;
+}
+
+.box-content h3:hover {
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+.box-content p {
+    cursor: default;
+    color: #010101;
+    font: 600 16px / 20px "Source Sans Pro", sans-serif;
+}
+
+.star-icon i {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.up-side {
+    cursor: pointer;
+    position: relative;
+}
+
+.cart-box {
+    color: #8a8a8a;
+    bottom: 78px;
+    left: 25px;
+    align-items: center;
+    gap: 15px;
+    display: flex;
+    font-size: 10px;
+    background: #fff;
+    position: absolute;
+    padding: 12px 22px;
+    border: 1px solid #eee;
+    transition: all ease 0.5s;
+}
+.cart-box h2{
+    font-size: 10px;
+    margin-left: -10px;
+    padding-right: 10px;
+    border-right: 2px black solid;
+    height: 100%;
 }
