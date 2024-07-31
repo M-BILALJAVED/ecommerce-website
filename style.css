@@ -46,6 +46,14 @@ body {
 }
 
 /* header*/
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+    transition: all 0.4s linear;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+}
 .comapny-logo {
     cursor: pointer;
 }
@@ -299,6 +307,7 @@ body {
     position: absolute;
     right: 38px;
     bottom: 24px;
+    color: #878787;
 }
 
 .down-box a:hover {

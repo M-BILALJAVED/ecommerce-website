@@ -3,3 +3,8 @@
         display: none;
     }
 }
+@media only screen and (max-width: 500px) {
+    .left-box h2, .center-box h2, .right-box h2 {
+        font-size: 18px
+    };
+}
