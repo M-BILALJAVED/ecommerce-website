@@ -407,7 +407,7 @@ body {
     -moz-transition: all ease 0.5s;
     -webkit-transition: all ease 0.5s;
     -o-transition: all ease 0.5s;
-    transition: all ease 0.5s;
+    transition: all ease-in-out 0.5s;
 }
 
 .up-side:hover .links,
@@ -420,7 +420,9 @@ body {
     display: table-cell;
     vertical-align: middle;
 }
-
+.links a:hover{
+    color: var(--hover-color);
+}
 .links a span {
     font-size: 14px;
     margin: 0 -2px 0 10px;
@@ -469,4 +471,62 @@ body {
 .seller-box3,
 .seller-box4{
     text-align: center;
+    position: relative;
+}
+.best-seller-box h3{
+    font-size: 18px;
+    color: #757575;
+    cursor: pointer;
+    margin: 0 0 5px;
+}
+.best-seller-box h3:hover{
+    color: var(--hover-color);
+}
+.best-seller-box p{
+    cursor: default;
+    color: #010101;
+    font: 600 16px / 20px "Source Sans Pro", sans-serif;
+}
+.seller-hover-links{
+    list-style: none;
+    background-color: white;
+    width: 72%;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 40px;
+    bottom: 63px;
+    padding: 12px;
+    box-shadow: 0 0 9px rgba(172, 172, 172, 0.35);
+    visibility: hidden;
+    opacity: 0;
+}
+.seller-box1:hover .seller-hover-links,
+.seller-box2:hover .seller-hover-links,
+.seller-box3:hover .seller-hover-links,
+.seller-box4:hover .seller-hover-links{
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+.seller-hover-links a i:hover{
+    color: var(--hover-color);
+}
+
+.seller-hover-links li{
+    padding: 2px 20px;
+    border-right: 1px #ccc6c6 solid;
+}
+.seller-hover-links li:nth-child(3){
+    border: none !important;
+}
+.seller-hover-links li i{
+    color: #ccc6c6;
+    font-size: large;
+}
+.seller-box1 img,
+.seller-box2 img,
+.seller-box3 img,
+.seller-box4 img{
+    cursor: pointer;
 }
