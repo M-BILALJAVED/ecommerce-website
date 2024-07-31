@@ -7,4 +7,8 @@
     .left-box h2, .center-box h2, .right-box h2 {
         font-size: 18px;
     }
+    .tab-links{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

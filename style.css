@@ -352,6 +352,7 @@ body {
 
 .box-content {
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .box-content h3 {
