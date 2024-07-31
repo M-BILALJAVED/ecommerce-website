@@ -344,6 +344,11 @@ body {
     font: 700 18px / 20px "Montserrat", sans-serif;
 }
 
+.tab-links .active {
+    color: #000000;
+    font-weight: bold;
+}
+
 .tab-links li {
     border-right: 1px solid #d8d8d8;
     padding-right: 40px;
@@ -378,29 +383,55 @@ body {
     margin-bottom: 8px;
 }
 
-.up-side {
+.up-side,
+.down-side {
     cursor: pointer;
     position: relative;
 }
 
-.cart-box {
-    color: #8a8a8a;
-    bottom: 78px;
-    left: 25px;
-    align-items: center;
-    gap: 15px;
-    display: flex;
-    font-size: 10px;
+.cart-box .links {
+    left: 0;
+    right: 0;
+    bottom: 80px;
+    z-index: 1;
+    opacity: 0;
+    width: 100%;
+    display: table;
+    font-size: 17px;
     background: #fff;
+    visibility: hidden;
     position: absolute;
-    padding: 12px 22px;
+    text-align: center;
     border: 1px solid #eee;
+    -moz-transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
     transition: all ease 0.5s;
 }
-.cart-box h2{
-    font-size: 10px;
-    margin-left: -10px;
-    padding-right: 10px;
-    border-right: 2px black solid;
-    height: 100%;
+
+.up-side:hover .links,
+.down-side:hover .links {
+    opacity: 1;
+    visibility: visible;
+}
+
+.links li {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.links a span {
+    font-size: 14px;
+    margin: 0 -2px 0 10px;
+}
+
+.links a {
+    color: #8a8a8a;
+    display: block;
+    padding: 12px 9px;
+    text-decoration: none;
+    -moz-transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
 }
