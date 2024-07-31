@@ -8,6 +8,24 @@
         justify-content: center;
         gap: 20px;
     }
+
+    .footer {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .footer-box1,
+    .footer-box2,
+    .footer-box3,
+    .footer-box4 {
+        flex-basis: 40%;
+    }
+
+    .down-footer {
+        justify-content: space-around;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -22,4 +40,11 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-}
+
+    .footer-box1,
+    .footer-box2,
+    .footer-box3,
+    .footer-box4 {
+        flex-basis: 80%;
+        align-items: center;
+    }
