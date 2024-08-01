@@ -85,9 +85,12 @@
 
     .tab-links {
         flex-wrap: wrap;
-        justify-content: center;
+        font: 700 12px / 20px "Montserrat", sans-serif;
+        gap: 10px;
     }
-
+    .tab-links li{
+        padding-right: 10px;
+    }
     .footer-box1,
     .footer-box2,
     .footer-box3,
