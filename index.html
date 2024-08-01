@@ -7,6 +7,12 @@
     <title>my ecommerce website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reponsive.css">
+
+    <style>
+        .icons .menu-nav{
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,9 +22,8 @@
             <div class="comapny-logo">
                 <a href="#"><img src="/assets/logo.png" alt="comapny logo"></a>
             </div>
-
             <div class="nav-links  d-flex">
-                <ul class=" d-flex">
+                <ul class=" d-flex" id="navlinks">
                     <li>HOME</li>
                     <li>Products</li>
                     <li>BLOG</li>
@@ -27,6 +32,7 @@
                     <li>CONTACT</li>
                 </ul>
                 <div class="icons d-flex">
+                    <i class="menu-nav fa-solid fa-bars" id="menunavicon"></i>
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-solid fa-bag-shopping"></i>
@@ -1482,27 +1488,10 @@
 
 
 
+<!-- for header nav links -->
+ <script src="main.js"></script>
 
 
-
-    <script>
-        function openCity(evt, tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
 
     <script src="https://kit.fontawesome.com/57efafa6c2.js" crossorigin="anonymous"></script>
 </body>
