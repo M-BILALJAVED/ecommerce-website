@@ -39,6 +39,17 @@
         margin-top: 40px;
     }
 
+    .search-bar {
+        width: 100%;
+    }
+
+    .banner-wrapper {
+        height: 70vh;
+    }
+
+
+
+
     .small-products {
         flex-wrap: wrap;
         justify-content: center;

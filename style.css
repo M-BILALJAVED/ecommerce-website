@@ -83,13 +83,18 @@ body {
     transition: color 3s;
 }
 
-.nav-links ul a{
+.nav-links ul a {
     text-decoration: none;
     color: var(--primary-text-color);
 }
+
 .nav-links ul li a:hover,
 .icons i:hover {
     color: var(--hover-color);
+}
+
+.icons .menu-nav {
+    display: none;
 }
 
 .icons {
@@ -101,6 +106,35 @@ body {
     cursor: pointer;
 }
 
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+    position: absolute;
+    width: 40%;
+    height: 11vh;
+    top: 13vh;
+    right: 100%;
+    padding: 15px 10px;
+    gap: 20px;
+    transition: .1s ease-in-out;
+}
+
+.serach-bar-inside {
+    border: 2px solid #b3adb7;
+    width: 80%;
+    height: 7vh;
+    background: transparent;
+    text-align: center;
+}
+
+.search-bar i {
+    font-size: 30px;
+}
+
+.serachbar-active {
+    right: 0;
+}
 
 /* banner section 1 */
 .banner-wrapper {
@@ -634,7 +668,12 @@ footer a {
 }
 
 .footer-icons i {
+    cursor: pointer;
     padding-right: 10px;
+}
+
+.footer-icons i:hover {
+    color: var(--hover-color);
 }
 
 .footer-box2 h3,

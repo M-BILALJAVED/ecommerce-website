@@ -1,5 +1,14 @@
 
-// for nav link
+// for nav link search
+
+const serachbaricon = document.getElementById("serachbaricon");
+const serachbar = document.getElementById("serachbar");
+
+serachbaricon.addEventListener("click", () => {
+
+    serachbar.classList.toggle("serachbar-active")
+})
+// for nav link menu
 
 const menunavicon = document.getElementById("menunavicon");
 const navlinks = document.getElementById("navlinks");
