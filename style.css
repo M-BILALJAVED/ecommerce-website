@@ -109,19 +109,24 @@ body {
 .search-bar {
     display: flex;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     position: absolute;
-    width: 40%;
+    width: 30%;
     height: 11vh;
     top: 13vh;
     right: 100%;
     padding: 15px 10px;
     gap: 20px;
     transition: .1s ease-in-out;
+    box-shadow: 0 0 9px rgba(172, 172, 172, 0.35);
+
+
 }
 
 .serach-bar-inside {
-    border: 2px solid #b3adb7;
+    border: 1px solid #0d0910;
+    font-size: 18px;
+    border-radius: 50px;
     width: 80%;
     height: 7vh;
     background: transparent;
