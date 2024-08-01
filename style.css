@@ -134,6 +134,7 @@ body {
 }
 
 .search-bar i {
+    cursor: pointer;
     font-size: 30px;
 }
 
