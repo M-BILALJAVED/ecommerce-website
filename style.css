@@ -76,7 +76,6 @@ body {
 }
 
 .nav-links ul {
-    cursor: pointer;
     list-style: none;
     gap: 30px;
     letter-spacing: 1px;
@@ -84,7 +83,11 @@ body {
     transition: color 3s;
 }
 
-.nav-links ul li:hover,
+.nav-links ul a{
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+.nav-links ul li a:hover,
 .icons i:hover {
     color: var(--hover-color);
 }
