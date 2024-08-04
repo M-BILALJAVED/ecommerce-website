@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reponsive.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        .opac {
+            opacity: 0;
+        }
+
+        .animate__animated {
+            animation-delay: 0.4s;
+        }
+    </style>
 </head>
 
 <body>
@@ -56,7 +67,7 @@
     <!-- section 2 -->
     <section class="section-2">
         <div class="container all-boxs d-flex ">
-            <div class="left-box">
+            <div class="left-box opac" data-animation="animate__fadeInLeft">
                 <h2>MY SMALL WRITING <br> DESK</h2>
                 <div class="left-btn">
                     <span><a href=""> SHOP NOW</a></span>
@@ -67,16 +78,16 @@
                 </div>
             </div>
             <div class="center-box d-flex justify-content-between">
-                <div class="up-box">
+                <div class="up-box opac" data-animation="animate__fadeInDown">
                     <h2>MODULAR LOUNGE <br>TEAK</h2>
                     <p>$129.00</p>
                 </div>
-                <div class="down-box">
+                <div class="down-box opac" data-animation="animate__fadeInUp">
                     <h2>Modular technical <br>fabric sofa</h2>
                     <a href="">SHOP NOW</a>
                 </div>
             </div>
-            <div class="right-box">
+            <div class="right-box opac" data-animation="animate__fadeInRight">
                 <h2>Direct light <br>pendant lamp</h2>
                 <p>$129.00</p>
                 <div class="left-btn">
@@ -100,7 +111,7 @@
             </div>
 
 
-            <div id="featured" class="tabcontent">
+            <div id="featured" class="tabcontent opac" data-animation="animate__zoomIn">
                 <div class="box-content d-flex justify-content-center justify-content-around">
                     <div class="tab-box-1">
                         <div class="up-side">
@@ -1058,7 +1069,7 @@
                 <h2>BEST SELLER</h2>
                 <p>EXCEPTEUR SINT OCCAECAT</p>
             </div>
-            <div class="best-seller-box d-flex justify-content-center">
+            <div class="best-seller-box d-flex justify-content-center opac" data-animation="animate__jackInTheBox">
                 <div class="seller-box1">
                     <img src="assets/asset 21.jpeg" alt="">
                     <div class="seller-hover">
@@ -1164,7 +1175,7 @@
     <section class="section-5">
         <div class="container">
             <div class="small-products d-flex justify-content-between">
-                <div class="small-products1">
+                <div class="small-products1 opac" data-animation="animate__fadeInLeft">
                     <h2>HOT SALE</h2>
                     <div class="inside-small-prod">
                         <div class="inside-small-prod1">
@@ -1221,7 +1232,7 @@
                 </div>
                 <div class="small-products2">
                     <h2>Featured Products</h2>
-                    <div class="inside-small-prod">
+                    <div class="inside-small-prod opac" data-animation="animate__fadeInLeft">
                         <div class="inside-small-prod1">
                             <div class="small-prod-content d-flex">
                                 <img src="assets/asset 26.jpeg" alt="">
@@ -1276,7 +1287,7 @@
                 </div>
                 <div class="small-products3">
                     <h2>Sale Products</h2>
-                    <div class="inside-small-prod">
+                    <div class="inside-small-prod opac" data-animation="animate__fadeInRight">
                         <div class="inside-small-prod1">
                             <div class="small-prod-content d-flex">
                                 <img src="assets/asset 29.jpeg" alt="">
@@ -1331,7 +1342,7 @@
                 </div>
                 <div class="small-products4">
                     <h2>Top Rated Products</h2>
-                    <div class="inside-small-prod">
+                    <div class="inside-small-prod opac" data-animation="animate__fadeInRight">
                         <div class="inside-small-prod1">
                             <div class="small-prod-content d-flex">
                                 <img src="assets/asset 24.jpeg" alt="">
@@ -1390,7 +1401,7 @@
 
     <!-- footer  -->
     <footer>
-        <div class="footer container d-flex">
+        <div class="footer container d-flex opac" data-animation="animate__fadeInUp">
             <div class="footer-box1">
                 <img src="assets/asset 31.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nostrum quod sunt molestiae ipsa
